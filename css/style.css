@@ -136,7 +136,7 @@ body {
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .container {
         width: 90%;
     }
@@ -144,14 +144,11 @@ body {
         width: 90%;
     }
 
-}
-
-@media screen and (max-width: 900px) {
-
     .main {
         width: 100%;
         height: auto;
     }
+
     .container {
         padding: 2rem 0;
         width: 80%;
