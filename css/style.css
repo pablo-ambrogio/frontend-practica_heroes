@@ -46,32 +46,65 @@ body {
 
 .main {
     width: 100%;
-    height: 100vh;
+    height: auto;
+
     display: flex;
     align-items: center;
+
+    position: relative;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+
+    font-size: 1.5rem;
+
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+
+    background: #00669F;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 .container {
     width: 80%;
-    height: auto;
-    max-width: 1200px;
+    height: 85vh;
+    max-width: 1400px;
+
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .card {
-    width: 300px;
+    width: 18.75rem;
+    height: 37.5rem;
     padding-bottom: 1rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
     border-radius: 1rem 1rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .background {
     width: 100%;
     height: auto;
     position: relative;
+}
+
+.background__img {
+    width: 300px;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .background__person {
@@ -89,6 +122,8 @@ body {
 }
 
 .background__person-img {
+    width: 7.5rem;
+    height: 7.5rem;  
     border-radius: 100%;
 }
 
@@ -124,15 +159,33 @@ body {
 
 .footer {
     width: 100%;
+    padding: 1rem 0;
+
     background-color: #00669F;
     color: #fff;
-    padding: 1rem 0;
+    
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__paragraph {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+@media screen and ( max-width: 1366px ) {
+    
+    .container {
+        height: auto;
+        max-width: 800px;
+        padding: 1rem 0;
+        row-gap: 1.5rem;
+    }
+
+    .footer {
+        position: relative;
+    }
 }
 
 
@@ -147,6 +200,11 @@ body {
     .main {
         width: 100%;
         height: auto;
+    }
+
+    .circle {
+        top: 40%;
+        right: 1.5rem;
     }
 
     .container {
