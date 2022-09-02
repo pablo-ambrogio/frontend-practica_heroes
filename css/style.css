@@ -70,6 +70,8 @@ body {
     background: #00669F;
     border-radius: 100%;
     cursor: pointer;
+
+    z-index: 1;
 }
 
 .container {
@@ -190,9 +192,7 @@ body {
 
 
 @media screen and (max-width: 1150px) {
-    .container {
-        width: 90%;
-    }
+
     .paragraph__text, .title__text, .footer__paragraph {
         width: 90%;
     }
@@ -204,10 +204,11 @@ body {
 
     .circle {
         top: 40%;
-        right: 1.5rem;
+        right: .5rem;
     }
 
     .container {
+        width: 90%;
         padding: 2rem 0;
         width: 80%;
         flex-wrap: wrap;
