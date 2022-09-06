@@ -59,9 +59,6 @@ body {
     height: 3rem;
     line-height: 3rem;
     text-align: center;
-    color: #fff;
-
-    font-size: 1.5rem;
 
     position: fixed;
     top: 50%;
@@ -72,6 +69,12 @@ body {
     cursor: pointer;
 
     z-index: 1;
+}
+
+.circle__more {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .container {
@@ -175,6 +178,77 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+
+
+/*
+    * pagina super-heroe 
+*/
+
+.formulario {
+    width: 80%;
+    
+    margin: auto;
+
+    background: #00669F;
+
+    color: #fff;
+}
+
+.dividir-formulario {
+    width: 60%;
+    height: 80vh;
+    /* height: auto; */
+
+    margin: auto;
+
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.division-uno, .division-dos {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem; /* agrega espacio entre los hijos */
+}
+
+.inputs {
+    width: 80%;
+    height: 3rem;
+
+    border-radius: .8rem;
+
+    border: none;
+
+    outline: none; /*saca borde al hacer click*/
+
+    padding: 0 1rem;
+}
+
+.text-tarea {
+    height: 7rem;
+    padding-top: 1rem;
+    resize: none; /* deja fijo caja text-tarea*/
+}
+
+.boton-contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+.boton-enviar {
+    padding: 1rem 5rem;
+    background: #1CD1B0;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
 
 @media screen and ( max-width: 1366px ) {
     
